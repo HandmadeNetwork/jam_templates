@@ -1,0 +1,89 @@
+version(1);
+
+project_name = "Wheel Reinvention Jam Templates";
+
+patterns =
+{
+	"*.c",
+	"*.cpp",
+	"*.ds",
+    "*.md",
+    "*.page",
+    "*.mdesk",
+	"*.h",
+	"*.inc",
+	"*.bat",
+	"*.sh",
+	"*.4coder",
+	"*.txt",
+};
+
+blacklist_patterns =
+{
+	".*",
+};
+
+load_paths =
+{
+	{
+		{ {".", .recursive = true, .relative = true } }, .os = "win"
+	},
+};
+
+command_list =
+{
+	
+    {
+		.name = "build",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd =
+		{
+			{ "build.bat", .os = "win" },
+		},
+	},
+    
+    {
+		.name = "run_sdl_dearimgui_opengl3",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd =
+		{
+			{ "pushd build && template_sdl_dearimgui_opengl3.exe && popd", .os = "win" },
+		},
+	},
+    
+    {
+		.name = "run_sdl_microui_opengl3",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd =
+		{
+			{ "pushd build && template_sdl_microui_opengl3.exe && popd", .os = "win" },
+		},
+	},
+    
+    {
+		.name = "run_raylib",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd =
+		{
+			{ "pushd build && template_raylib.exe && popd", .os = "win" },
+		},
+	},
+    
+};
+
+fkey_command[1] = "build";
+fkey_command[5] = "run_sdl_dearimgui_opengl3";
+fkey_command[6] = "run_sdl_microui_opengl3";
+fkey_command[7] = "run_raylib";

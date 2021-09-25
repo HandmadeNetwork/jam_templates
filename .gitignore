@@ -1,0 +1,11 @@
+build/*
+local/*
+*.exe
+*.pdb
+*.exp
+*.lib
+*.obj
+*.dll
+*.ilk
+*.d
+*.swp
