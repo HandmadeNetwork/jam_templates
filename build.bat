@@ -14,4 +14,7 @@ cl /nologo /Zi /I..\src\ ../src/template_sdl_microui_opengl3.c ../src/third_part
 rem ~~~ build raylib template
 cl /nologo /Zi /I..\src\ ../src/template_raylib.c /link ..\libs\raylibdll.lib
 
+rem ~~~ [Odin] build SDL2/MicroUI template
+odin build ../src/template_sdl_microui.odin 
+
 popd
