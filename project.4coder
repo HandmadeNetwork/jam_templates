@@ -6,6 +6,7 @@ patterns =
 {
 	"*.c",
 	"*.cpp",
+    "*.odin",
 	"*.ds",
     "*.md",
     "*.page",
