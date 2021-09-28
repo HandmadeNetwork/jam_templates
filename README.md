@@ -4,7 +4,7 @@ For Odin files, use the latest nightly build of Odin, as the template code makes
 
 For C/C++ templates, all required .lib files are included in the `libs` folder. On Windows, you'll want to run the build.bat script from the Visual Studio Native Tools Developer Prompt for x64.
 
-We don't have a setup for Linux or Mac at the moment. The build for all of the templates is pretty simple, however, so if you're on those platforms, it should be relatively straightforward to build there too.
+We don't have a setup for GNU/Linux or additional setups aside from raylib for MacOS at the moment. However, the build for all of the templates is pretty simple so if you're on those platforms, it should be relatively straightforward to build there too. Feel free to ask in Discord if you get stuck!
 
 Most of the templates here were sourced from the examples provided with the aforementioned libraries.
 
