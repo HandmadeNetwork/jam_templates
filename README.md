@@ -7,3 +7,22 @@ For C/C++ templates, all required .lib files are included in the `libs` folder. 
 We don't have a setup for Linux or Mac at the moment. The build for all of the templates is pretty simple, however, so if you're on those platforms, it should be relatively straightforward to build there too.
 
 Most of the templates here were sourced from the examples provided with the aforementioned libraries.
+
+# Notes on Mac
+### build_macos.sh
+
+Includes everything you need to build a template project with the latest version of raylib (4.0)
+
+<img width="912" alt="Screen Shot 2021-09-27 at 1 49 23 PM" src="https://user-images.githubusercontent.com/13829168/134970200-7c1e6f34-30d5-4502-87c3-753be65bbbe2.png">
+
+Either:
+
+- Call with bash: `bash build_macos.sh`
+
+or
+
+- `chmod +x build_macos.sh` and call directly: `./build_macos.sh`
+
+Modifying:
+
+Open `build_macos.sh` and edit `SOURCE_FILES` and/or `OUTPUT`
